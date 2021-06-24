@@ -13,6 +13,9 @@ class User {
   @Column()
   email: string
 
+  @Column()
+  password: string
+
   @Column({ name: "is_admin", default: false })
   isAdmin: boolean
 
