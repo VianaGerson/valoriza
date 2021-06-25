@@ -25,3 +25,15 @@
   :heavy_check_mark: Não é permitido cadastrar elogios para usuários inválidos
 
   :heavy_check_mark: O usuário precisa estar autenticado na aplicação
+
+validar campos
+habilitar cors
+enviar email de confirmaçao de usuario
+enviar email para usuário de elogio
+class handle erro customizado
+adicionar banco postgres
+pedir doacao
+logs
+importar e exportar usuarios
+CI/CD
+criar frontend
