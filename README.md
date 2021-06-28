@@ -27,7 +27,9 @@
   :heavy_check_mark: O usuário precisa estar autenticado na aplicação
 
 validar campos
+ler variaveis do .env
 habilitar cors
+swagger documentacao
 enviar email de confirmaçao de usuario
 enviar email para usuário de elogio
 class handle erro customizado
