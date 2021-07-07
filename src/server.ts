@@ -1,7 +1,7 @@
 import 'reflect-metadata'
 import express, { NextFunction , Request, Response } from 'express'
 import "express-async-errors"
-import * as cors from 'cors'
+import cors from 'cors'
 
 import './database'
 import { router } from './routes'
