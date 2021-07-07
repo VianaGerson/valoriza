@@ -26,7 +26,6 @@
 
   :heavy_check_mark: O usuário precisa estar autenticado na aplicação
 
-habilitar cors
 swagger documentacao
 enviar email de confirmaçao de usuario
 enviar email para usuário de elogio
