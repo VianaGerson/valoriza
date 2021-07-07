@@ -27,6 +27,7 @@
   :heavy_check_mark: O usuário precisa estar autenticado na aplicação
 
 swagger documentacao
+criar testes
 enviar email de confirmaçao de usuario
 enviar email para usuário de elogio
 class handle erro customizado

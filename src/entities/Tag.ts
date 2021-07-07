@@ -2,6 +2,22 @@ import { Expose } from "class-transformer"
 import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm"
 import { v4 as uuid } from "uuid"
 
+/**
+ * @swagger
+ *  components:
+ *    schemas:
+ *      Tag:
+ *        type: object
+ *        required:
+ *          - name
+ *        properties:
+ *          name:
+ *            type: string
+ *            minimum: 2
+ *            maximum": 50
+ *        example:
+ *           name: Inspiração
+ */
 @Entity("tags")
 class Tag {
 

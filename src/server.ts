@@ -1,7 +1,9 @@
 import 'reflect-metadata'
 import express, { NextFunction , Request, Response } from 'express'
 import "express-async-errors"
+import { swaggerSpec } from "./swagger_options"
 import cors from 'cors'
+import swaggerUi from 'swagger-ui-express'
 
 import './database'
 import { router } from './routes'
@@ -13,6 +15,8 @@ app.use(cors())
 app.use(express.json())
 
 app.use(router)
+
+app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerSpec))
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   if (err instanceof Error) {
@@ -27,6 +31,6 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   })
 })
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log('Server is running')
 })

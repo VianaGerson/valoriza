@@ -2,6 +2,37 @@ import { Exclude } from "class-transformer"
 import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm"
 import { v4 as uuid } from "uuid"
 
+/**
+ * @swagger
+ *  components:
+ *    schemas:
+ *      User:
+ *        type: object
+ *        required:
+ *          - name
+ *          - email
+ *          - password
+ *        properties:
+ *          name:
+ *            type: string
+ *            minimum: 2
+ *            maximum": 255
+ *          email:
+ *            type: string
+ *            format: email
+ *            description: O email deve ser unico.
+ *          password:
+ *            type: string
+ *            format: password
+ *            minimum: 6
+ *            maximum": 12
+ *          isAdmin:
+ *            type: boolean
+ *        example:
+ *           name: Alexander
+ *           email: fake@email.com
+ *           password: teste123
+ */
 @Entity("users")
 class User {
 
